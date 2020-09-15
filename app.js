@@ -22,7 +22,9 @@ db.on("error", () => {
 db.once("open", () => {
   console.log("Connected");
 });
-
+app.use('/',(req,res)=>{
+    res.send({message:'Welcome to the API. Use appropriate routers'})
+})
 app.use("/records", recordsRouter);
 app.listen(port, () => {
   console.log(`Server running ${port}`);
