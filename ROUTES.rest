@@ -1,0 +1,10 @@
+POST http://localhost:3000/records
+Content-Type: application/json
+
+{
+    "reading": "200",
+    "readingDate": "24, Aug 2020",
+    "fastingOption": "With Fast"
+}
+###
+GET http://localhost:3000/records
